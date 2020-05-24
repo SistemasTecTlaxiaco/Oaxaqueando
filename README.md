@@ -1,3 +1,3 @@
-# Oaxacaquenado
+# Oaxacaqueando
  Desarrollo de Proyecto Escolar
- Pagina web de Oaxaquenado
+ Pagina web de Oaxaqueano
