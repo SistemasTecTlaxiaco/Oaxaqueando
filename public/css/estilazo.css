@@ -1,0 +1,156 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#loginp{
+    background-color:#FCD640;
+    margin: 0 auto;
+    width: 500px;
+    padding: 50px; 
+}
+#tabla1{
+    background-color:#FCD640;
+    margin: 0 auto;
+    width: 900px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+.a {table-layout: fixed; width: 200px;}
+    p.justify {text-align: justify;}
+
+#tayuda{
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding-top: 20px;
+    width:800px;
+
+}
+h1{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #2A3131;
+    font-size:20px;
+    
+}
+
+input{
+    margin: 0 auto;
+    border: solid 0; 
+    border-radius: 3px;
+}
+#registrate{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color:#0F9398;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    width: 200px;
+}
+
+input[type=text], 
+input[type=password], 
+input[type=email],
+input[type=number],
+input[type=file],
+textarea{
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    width: 370px;
+}
+input[type=submit]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color:#0F9398;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    width: 200px;
+}
+.center{
+    text-align: center;
+}
+
+.opcion{
+    padding: 5px 0;
+}
+
+.barra{
+    background-color:rgb(44, 115, 182);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.seleccionado{
+    background-color: rgb(33, 90, 143);
+    border-radius: 4px;
+    color: rgb(204, 98, 186);
+    padding: 10px;
+}
+#seccion{
+    background-color:#F3EFEF;
+    margin: 0 auto;
+    width: 1050px;
+    padding: 50px;
+}
+#contenedor{
+    background-color:#F3EFEF;
+    margin: 0 auto;
+    width: 1050px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom:30px ;
+}
+#header{
+    background: #FCD640;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30;
+    
+
+}
+#header ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+#header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+table{
+    
+    border-collapse: collapse; 
+}
+#footer{
+    background-color: #F3EFEF;
+    padding: 20px;
+}
+#thconsulta{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #872E5C), color-stop(1, #3D112C) );
+
+    color:#FFFFFF; 
+    font-size: 17px; 
+    font-weight: bold; 
+   
+
+}
+th{
+    padding: 5px;
+}
+#tbody-usuarios{
+    background-color: #0f93983b;
+    
+    color: #00557F; 
+    font-size: 14px;
+    font-weight: bold; 
+    text-align: center;
+}
+.cerrar-sesion{
+    float: right;
+}
