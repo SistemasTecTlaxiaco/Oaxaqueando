@@ -1,4 +1,4 @@
-# **Bienvenidos**
+# **Bienvenido**
 
 
 ## Oaxaqueando te da la Bienvenida a su Repositorio :wave: 
@@ -24,7 +24,7 @@ ___
   |@NataliaSantiago| Lider del Proyecto :+1:
   |@ObedG      |Programador  y Analista  :question::computer:
   |@Litzy-12 | Diseñadora :dizzy:
-  |@Christoherg2| Tester ::mag:
+  |@Christoherg2| Tester :mag:
 ___
 
 ### Documentación
@@ -35,4 +35,4 @@ ___
 ___
 
 
-> **La calidad de un producto es lo que el consumidor final percibirá, un producto de mala calidad será mucho menos vendible. ** ~*Steve Jobs* 
+> **La calidad de un producto es lo que el consumidor final percibirá, un producto de mala calidad será mucho menos vendible.** ~*Steve Jobs* 
