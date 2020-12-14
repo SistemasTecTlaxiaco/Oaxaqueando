@@ -8,15 +8,6 @@ Este repositorio se creo principalmente para alojar nuestro código y la documen
 ![Oaxaqueando](https://user-images.githubusercontent.com/62117067/100479481-fe614980-30b3-11eb-9b72-2d79d3b12eec.png)
 
 ___
-*Links*
-
-[Servidor de Alojamiento](https://dashboard.heroku.com/apps/oaxacaqueando/deploy/github "Servidor Para desplegar")
-
-[App Desplegada](https://oaxacaqueando.herokuapp.com/ "Aplicación Desplegada")
-
-[Tablero Kanbans en GitHub](https://github.com/Christopherg2/Oaxaqueando "Tablero Kanbans")
-
-___
 ### Integrantes del equipo
 
  | **Nombre** | **Rol** | 
@@ -27,12 +18,6 @@ ___
   |@Christoherg2| Tester :mag:
 ___
 
-### Documentación
-
-- [x] Documento de Arquitectura de Software
-- [x] Documento de Requisitos del Sistema
-- [x] Tablero Kanban
+Si deseas conocer más información acerca de nuestro proyecto, puedes visitisar nuestra [Wiki](https://github.com/Christopherg2/Oaxaqueando/wiki) aqui en Git Hub 
 ___
-
-
 > **La calidad de un producto es lo que el consumidor final percibirá, un producto de mala calidad será mucho menos vendible.** ~*Steve Jobs* 
