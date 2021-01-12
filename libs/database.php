@@ -1,34 +1,11 @@
 <?php
-    class Database{
-        private $host;
-        private $db;
-        private $user;
-        private $password;
-        private $charset;
+    $host = "ec2-35-153-12-59.compute-1.amazonaws.com";
+    $user = "jmaqsngmqtrjhf";
+    $password = "93792bfb920cc5690f4e2c3592d5c0b972ec76b961c90e97a2c5de0a1746d48a";
+    $dbname = "d6g03u8h65dg58";
+    $port = "5432";
 
-        public function __construct(){
-            $this->host=constant('HOST');
-            $this->db=constant('DB');
-            $this->user=constant('USER');
-           // $this->password=constant('PASSWORD');
-            $this->charset=constant('CHARSET'); 
-        }
-        
-        function connect(){
-            try{
-                $connection = "mysql:host=".$this->host.";dbname=".$this->db.";charset=".$this->charset;
-                $options=[
-                    PDO::ATTR_ERRMODE               =>PDO::ERRMODE_EXCEPTION,
-                    PDO::ATTR_EMULATE_PREPARES      =>false,
-                
-                ];
-                $pdo=new PDO($connection, $this->user, $this->password, $options);
-
-                return $pdo;
-            }catch(PDOException $e){
-            print_r('Error connection: '. $e->getMessage());
-
-           }
-        }
-    }
+    $strCnx = "host=$host port=$port dbname=$dbname user=$user password=$password";
+    $conexion = pg_connect($strCnx) or die ("Error de conexion. " pg_last_error());
+    echo "Conexion exitosa<br>";
 ?>
