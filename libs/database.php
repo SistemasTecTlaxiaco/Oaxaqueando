@@ -6,6 +6,6 @@
     $port = "5432";
 
     $strCnx = "host=$host port=$port dbname=$dbname user=$user password=$password";
-    $conexion = pg_connect($strCnx) or die ("Error de conexion. " pg_last_error());
+    $conexion = pg_connect($strCnx) or die ("Error de conexion. " .pg_last_error());
     echo "Conexion exitosa<br>";
 ?>
