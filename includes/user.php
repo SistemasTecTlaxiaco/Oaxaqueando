@@ -8,7 +8,7 @@ include_once 'libs/database.php';
         public function userExists($user, $pass){
             //$md5pass=md5($pass);
 
-            $query=$this->connect()->prepare('SELECT * FROM usuarios WHERE username=:user AND pw=:pass');
+            $query=$this->connect()->prepare('SELECT * FROM usuarios2 WHERE username=:user AND pw=:pass');
             $query->execute(['user' => $user, 'pass'=> $pass]);
 
             if($query->rowCount()){
@@ -19,7 +19,7 @@ include_once 'libs/database.php';
         }
 
         public function setUser($user){
-            $query=$this->connect()->prepare('SELECT *FROM usuarios WHERE username = :user');
+            $query=$this->connect()->prepare('SELECT *FROM usuarios2 WHERE username = :user');
             $query->execute(['user' => $user]);
 
             foreach($query as $currentUser){

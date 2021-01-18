@@ -13,7 +13,7 @@
             <li><img src="Oaxaqueando.png" width="70px" height="70px"></li>
             <li><img src="iconos/117-buy.png" width="35px" height="35"></li>
             <li><a href="<?php echo constant ('URL'); ?>main">Inicio</a></li>
-            <li><a href="<?php echo constant ('URL'); ?>nuevo">Nueva</a></li>
+           <!-- <li><a href="<?php echo constant ('URL'); ?>nuevo">Nueva</a></li>-->
             <li><img src="iconos/060-shopping-bag.png" width="35px" height="35px"></li>
             <li><a href="<?php echo constant ('URL'); ?>consulta">Productos</a></li>
             <li><img src="iconos/032-question.png" width="35px" height="35px"></li>

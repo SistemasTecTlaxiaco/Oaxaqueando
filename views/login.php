@@ -30,6 +30,12 @@
         <p  class = " center " > <input  type ="submit" value = " Iniciar sesión " > 
         </p >
     </form>
-    <input type="button" onClick= "location.href='Sign UP.php';" value="Registrate">   
+    <input type="button" style=" font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background-color:#0F9398;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  width: 200px" onClick= "location.href='Sign UP.php';" value="Registrate">   
 </body>
 </html>
