@@ -248,6 +248,15 @@ Not advised to edit stuff below this line
   padding-top: 1em;
   padding-bottom: 1em;
 }
+#volver{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background-color:#0F9398;
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  width: 200px;  
+}
 .formoid-solid-orange div.submit{
   vertical-align: middle;
   text-align: right;

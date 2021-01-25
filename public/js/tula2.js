@@ -3,10 +3,10 @@ const botones=document.querySelectorAll(".bEliminar2");
 botones.forEach(boton => {
     boton.addEventListener("click", function(){
         const matricula=this.dataset.id;
-        const confirm=window.confirm("¿Deseas eliminar el articulo "+matricula+"?");
+        const confirm=window.confirm("¿Deseas eliminar el articulo ?");
          if(confirm){
              //Solicitud AJAX
-             httpRequest("https://oaxaqueando1.herokuapp.com/lista/eliminarDeseo/"+matricula, function(){
+             httpRequest("https://oaxaqueando1.herokuapp.com/eliminarDeseo/"+matricula, function(){
                 //console.log(this.responseText);
                 document.querySelector("#respuesta").innerHTML=this.responseText;
                 const tbody= document.querySelector("#tbody-usuarios");
