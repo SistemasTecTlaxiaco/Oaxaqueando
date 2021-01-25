@@ -46,10 +46,6 @@ class Nuevo extends Controller{
 							$mensaje= "Nuevo usuario creado";
 							
 							
-							   
-							}else{
-							   $mensaje= "La matricula ya existe";
-							}
 							
                         }else{
                             $mensaje= "Hubo un error en la subida del archivo";

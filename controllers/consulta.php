@@ -25,11 +25,16 @@ class Consulta extends Controller{
     function buscarUsuario(){
         $usuarios=$this->model->buscar();
         $this->view->usuarios=$usuarios;
-        $this->view->render('consulta/index');
+        $this->view->render("consulta/index");
+    }
+    function wlist(){
+        $usuarios=$this->model->lista();
+        $this->view->usuarios=$usuarios;
+        $this->view->render("lista/index");
     }
 
     function actualizarUsuario(){
-        //session_start();
+        session_start();
         $matricula=$_SESSION['id_verUsuario'];
         $username=$_POST['username'];
         $pw=hash("sha256",$_POST['pw']);
@@ -88,7 +93,21 @@ class Consulta extends Controller{
         //$this->render();
         echo $mensaje; 
     }
-    
+    function addart($param=null){
+       
+        $matricula=$param[0];
+        $u=$_SESSION['user'];
+       if($this->model->deseo($matricula)){
+      
+        $mensaje="Agregado a tu Wishlist";
+        
+       } else{
+           $mensaje="Hubo un problema";
+       }
+       //$this->view->render('main/index');
+       echo $mensaje;
+       
+    }
 
 }
 ?>

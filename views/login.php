@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sesiones</title>
 
-    <link  rel = "stylesheet" href ="public/css/estilazo.css">
+    <link  rel = "stylesheet" href ="public/css/estilacho.css">
 </head>
 <body background="3409778.jpg">
 

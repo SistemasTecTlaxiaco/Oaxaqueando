@@ -94,6 +94,19 @@ include_once 'models/usuario.php';
                     return false;
                 }
             }
+            public function deseo($art,$user){
+                try{
+                    $query=$this->db->connect()->prepare("INSERT INTO deseos (RART,RUSER) VALUES (:art,:us)");
+                    $query->execute([
+                        'art'=>$art,
+                        'us'=>$user
+                        ]);
+                    return true;
+                }catch(PDOException $e){
+                    return false;
+                }
+                
+            }
             public function buscar(){
                 $items=[];
                 $palabra=$_POST['palabra'];
@@ -113,6 +126,7 @@ include_once 'models/usuario.php';
                         $item->a_materno=$row['a_materno'];
                         $item->telefono=$row['telefono'];
                         $item->email=$row['email'];
+                        $item->archivo=$row['archivo'];
                        
 
                         array_push($items, $item);
@@ -125,6 +139,33 @@ include_once 'models/usuario.php';
                     return null;
                 }
             }
-        }
     
+        public function listas(){
+            $items=[];
+            $usuario=$_SESSION['user'];
+                       
+            try{
+                $query=$this->db->connect()->prepare("SELECT matricula,nombre,a_paterno,a_materno,archivo from usuarios inner join deseos on rart=matricula inner join usuarios2 on ruser=$usuario group by matricula");
+
+               while($row=$query->fetch()){
+                   
+                    $item=new Usuario();
+                    $item->matricula=$row['matricula'];
+                    $item->nombre=$row['nombre'];
+                    $item->a_paterno=$row['a_paterno'];
+                    $item->a_materno=$row['a_materno'];
+                    $item->a_materno=$row['a_materno'];
+                    $item->telefono=$row['telefono'];
+                    $item->email=$row['email'];
+                    $item->archivo=$row['archivo'];
+                   
+
+                    array_push($items, $item);
+                }
+                return $items;                
+            }catch(PDOException $e){
+                return [];
+            }
+        }
+    }
 ?>

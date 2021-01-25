@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Productos</title>
-    <link  rel = "stylesheet" href ="public/css/estilacho2.css">
+    <title>Wishlist</title>
+    <link  rel = "stylesheet" href ="public/css/estilacho.css">
 
 </head>
 <body background="3409778.jpg">
@@ -16,12 +16,12 @@
    
      ?>
     <div id="contenedor">
-    <form  id="tabla1" action="<?php echo constant('URL'); ?>consulta/buscarUsuario" method="POST" autocomplete="off">
-    <h1 class="center">Seccion de consulta</h1>
+   
+    <h1 class="center">Wishlist</h1>
+
     <h1>Bienvenido <?php echo $_SESSION['user'];  ?></h1>
-        <input type="text" name="palabra" placeholder="Buscar">
-        <input type="submit" value="Buscar">
-    </form>
+    <div id=respuesta class="center"></div>  
+    
   
    <center>
     <table id="tconsulta">
@@ -32,8 +32,8 @@
                 <th>Descripcion</th>
                 <th>Costo</th>
                 <th>Fotografia</th>
-                <th>Wishlist</th>
-                <th>Añadir al carrito</th>
+                <th>Eliminar</th>
+                
             </tr>
         </thead>
         <tbody id="tbody-usuarios">
@@ -44,17 +44,16 @@
                     $usuario = new Usuario();
                     $usuario = $row;
             ?> 
-            <tr id="fila-<?php echo $usuario->matricula; ?>" >
+            <tr id="fila-<?php echo $usuario->id; ?>">
                 <td><?php echo $usuario->matricula; ?></td>
                 <td><?php echo $usuario->nombre; ?></td>
                 <td><?php echo $usuario->a_paterno; ?></td>
                 <td><?php echo $usuario->a_materno; ?></td>
                 <td><img src="<?php echo URL.$usuario->archivo; ?>" width="100px" height="100px"></td>
-                <td><button id="bdeseo" class="bEliminar" data-matricula="<?php echo $usuario->matricula; ?>" data-costo="<?php echo $usuario->a_materno; ?>">Wishlist</button></td>
+                <td><button id="bdeseo" class="bEliminar2" data-id="<?php echo $usuario->id; ?>" >ELIMINAR</button></td>
             <!--<td><a href="<?php echo constant ('URL').'consulta/addart/'.$usuario->matricula;?>"><img src="iconos/097-cart-10.png" width="50px" height="50px"></a></td>-->
             <!--<td><a href="<?php echo constant('URL').'consulta/eliminarUsuario/'.$usuario->matricula; ?>">Eliminar</a></td>-->
-            <!--<td><a href="<?php echo constant ('URL');?>main"><img src="iconos/112-cart-1.png" width="50px" height="50px"></a></td>-->
-                <td><button id="bdeseo" class="bEliminar3" data-matricula="<?php echo $usuario->matricula; ?>" data-costo="<?php echo $usuario->a_materno; ?>">Agregar al carrito</button></td>
+                
                 
             </tr>
             <?php } ?>
@@ -63,7 +62,6 @@
     </div>
 
     <?php require 'views/footer.php'; ?>
-    <script src="<?php echo constant ('URL'); ?>public/js/tula.js"></script>
-    <script src="<?php echo constant ('URL'); ?>public/js/tula3.js"></script>
+    <script src="<?php echo constant ('URL'); ?>public/js/tula2.js"></script>
 </body>
 </html>

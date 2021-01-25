@@ -3,7 +3,7 @@ const botones=document.querySelectorAll(".bEliminar2");
 botones.forEach(boton => {
     boton.addEventListener("click", function(){
         const matricula=this.dataset.id;
-        const confirm=window.confirm("¿Deseas eliminar el articulo "+matricula+"?");
+        const confirm=window.confirm("¿Deseas eliminar el articulo ?");
          if(confirm){
              //Solicitud AJAX
              httpRequest("http://localhost/mvc2/lista/eliminarDeseo/"+matricula, function(){
