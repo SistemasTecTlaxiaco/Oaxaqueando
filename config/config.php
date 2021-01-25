@@ -1,5 +1,5 @@
 <?php
-    define('URL', 'http://localhost/mvc2/');
+    define('URL', 'https://oaxaqueando1.herokuapp.com/');
     define('HOST', 'bdyzcfehrcomfhksbhmx-mysql.services.clever-cloud.com');
     define('DB', 'bdyzcfehrcomfhksbhmx');
     define('USER', 'up1bqfux0eibfreq');
