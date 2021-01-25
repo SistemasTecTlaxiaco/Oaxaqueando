@@ -7,7 +7,7 @@ botones.forEach(boton => {
         alert("Agregado a la Wishlist" + costo)
 
         //Solicitud AJAX
-        httpRequest("http://localhost/mvc2/lista/addart/" + matricula, function () {
+        httpRequest("https://oaxaqueando1.herokuapp.com/lista/addart/" + matricula, function () {
             //console.log(this.responseText);
            
 
