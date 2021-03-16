@@ -11,7 +11,7 @@ botones2.forEach(boton => {
         alert("Agregado al carrito de compras")
 
         //Solicitud AJAX
-        httpRequest("https://oaxaqueando1.herokuapp.com/carro/add/" + params, function (){});
+        httpRequest("http://app-a048003f-c2d8-447d-ae4d-61eaaa1eb11e.cleverapps.io/carro/add/" + params, function (){});
 
     });
 });

@@ -4,10 +4,10 @@ botones.forEach(boton => {
     boton.addEventListener("click", function () {
         const matricula = this.dataset.matricula;
         const costo = this.dataset.costo;
-        alert("Agregado a la Wishlist" + costo)
+        alert("Agregado al carrito")
 
         //Solicitud AJAX
-        httpRequest("https://oaxaqueando1.herokuapp.com/lista/addart/" + matricula, function () {
+        httpRequest("http://app-a048003f-c2d8-447d-ae4d-61eaaa1eb11e.cleverapps.io/lista/addart/" + matricula, function () {
             //console.log(this.responseText);
            
 

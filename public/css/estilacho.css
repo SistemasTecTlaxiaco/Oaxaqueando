@@ -107,6 +107,12 @@ button{
 }
 #contenedor{
     background-color:#F3EFEF;
+    
+    
+    color: #00557F; 
+    font-size: 14px;
+    font-weight: bold; 
+    text-align: center;
     margin: 0 auto;
     width: 1050px;
     padding-right: 30px;

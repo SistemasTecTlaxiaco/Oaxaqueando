@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wishlist</title>
+    <title>Carrito de compras</title>
     <link  rel = "stylesheet" href ="public/css/estilacho.css">
 
 </head>
@@ -17,7 +17,7 @@
      ?>
     <div id="contenedor">
    
-    <h1 class="center">Wishlist</h1>
+    <h1 class="center">Carrito de compras</h1>
 
     <h1>Bienvenido <?php echo $_SESSION['user'];  ?></h1>
     <div id=respuesta class="center"></div>  
@@ -54,13 +54,22 @@
             <!--<td><a href="<?php echo constant ('URL').'consulta/addart/'.$usuario->matricula;?>"><img src="iconos/097-cart-10.png" width="50px" height="50px"></a></td>-->
             <!--<td><a href="<?php echo constant('URL').'consulta/eliminarUsuario/'.$usuario->matricula; ?>">Eliminar</a></td>-->
                 
+                <?php 
+                $total = $total+$usuario->a_materno;
+                ?> 
                 
             </tr>
             <?php } ?>
+                 
         </tbody>
     </table>
+       <div id=tbody-usuarios>
+        <?php 
+           echo "Total: ". $total;
+         ?>
+       </div>
     </div>
-
+               
     <?php require 'views/footer.php'; ?>
     <script src="<?php echo constant ('URL'); ?>public/js/tula2.js"></script>
 </body>

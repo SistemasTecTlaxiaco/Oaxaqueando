@@ -6,7 +6,7 @@ botones.forEach(boton => {
         const confirm=window.confirm("¿Deseas eliminar el articulo "+matricula+"?");
          if(confirm){
              //Solicitud AJAX
-             httpRequest("https://oaxaqueando1.herokuapp.com/lista/eliminarDeseo/"+matricula, function(){
+             httpRequest("http://app-a048003f-c2d8-447d-ae4d-61eaaa1eb11e.cleverapps.io/lista/eliminarDeseo/"+matricula, function(){
                 //console.log(this.responseText);
                 document.querySelector("#respuesta").innerHTML=this.responseText;
                 const tbody= document.querySelector("#tbody-usuarios");

@@ -32,8 +32,8 @@
                 <th>Descripcion</th>
                 <th>Costo</th>
                 <th>Fotografia</th>
-                <th>Wishlist</th>
                 <th>Añadir al carrito</th>
+                <!--<th>Añadir al carrito</th>-->
             </tr>
         </thead>
         <tbody id="tbody-usuarios">
@@ -50,11 +50,11 @@
                 <td><?php echo $usuario->a_paterno; ?></td>
                 <td><?php echo $usuario->a_materno; ?></td>
                 <td><img src="<?php echo URL.$usuario->archivo; ?>" width="100px" height="100px"></td>
-                <td><button id="bdeseo" class="bEliminar" data-matricula="<?php echo $usuario->matricula; ?>" data-costo="<?php echo $usuario->a_materno; ?>">Wishlist</button></td>
+                <td><button id="bdeseo" class="bEliminar" data-matricula="<?php echo $usuario->matricula; ?>" data-costo="<?php echo $usuario->a_materno; ?>">Agregar al carrito</button></td>
             <!--<td><a href="<?php echo constant ('URL').'consulta/addart/'.$usuario->matricula;?>"><img src="iconos/097-cart-10.png" width="50px" height="50px"></a></td>-->
             <!--<td><a href="<?php echo constant('URL').'consulta/eliminarUsuario/'.$usuario->matricula; ?>">Eliminar</a></td>-->
             <!--<td><a href="<?php echo constant ('URL');?>main"><img src="iconos/112-cart-1.png" width="50px" height="50px"></a></td>-->
-                <td><button id="bdeseo" class="bEliminar3" data-matricula="<?php echo $usuario->matricula; ?>" data-costo="<?php echo $usuario->a_materno; ?>">Agregar al carrito</button></td>
+                <!--<td><button id="bdeseo" class="bEliminar3" data-matricula="<?php echo $usuario->matricula; ?>" data-costo="<?php echo $usuario->a_materno; ?>">Agregar al carrito</button></td>-->
                 
             </tr>
             <?php } ?>

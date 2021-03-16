@@ -18,7 +18,7 @@
             <li><a href="<?php echo constant ('URL'); ?>consulta">Productos</a></li>
             <li><img src="iconos/032-question.png" width="35px" height="35px"></li>
             <li><a href="<?php echo constant ('URL'); ?>ayuda">Ayuda</a></li>
-            <li><a href="<?php echo constant ('URL'); ?>lista">Wishlist</a></li>
+            <li><a href="<?php echo constant ('URL'); ?>lista">Carrito de compras</a></li>
             <li class="cerrar-sesion"><img src="iconos/093-right-arrow-5.png" width="35px" height="35px"></li>           
             <li class="cerrar-sesion"><a href="includes/logout.php">Cerrar sesion</a>
             </li>
