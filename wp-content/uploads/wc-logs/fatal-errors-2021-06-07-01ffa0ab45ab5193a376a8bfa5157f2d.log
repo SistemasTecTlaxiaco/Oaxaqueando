@@ -1,0 +1,4 @@
+2021-06-07T05:49:35+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\wordpress\wp-includes\pomo\streams.php en la línea 199
+
+2021-06-07T05:54:32+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\wordpress\wp-includes\wp-db.php en la línea 2056
+

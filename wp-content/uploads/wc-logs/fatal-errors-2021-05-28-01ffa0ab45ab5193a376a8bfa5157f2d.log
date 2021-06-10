@@ -1,0 +1,8 @@
+2021-05-28T08:15:07+00:00 CRITICAL Maximum execution time of 120 seconds exceeded en C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php en la línea 163
+
+2021-05-28T08:17:01+00:00 CRITICAL Uncaught WooCommerce\PayPalCommerce\ApiClient\Exception\PayPalApiException: [INVALID_REQUEST] Request is not well-formed, syntactically incorrect, or violates schema. in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php:112
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\Render\class-onboardingrenderer.php(66): WooCommerce\PayPalCommerce\ApiClient\Endpoint\PartnerReferrals->signup_link()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(311): WooCommerce\PayPalCommerce\Onboarding\Render\OnboardingRenderer->get_signup_link(true)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-onboarding\src\class-onboarding-rest-controller.php(124): WooCommerce\PayPalCommerce\Onboarding\Onboarding_REST_Controller->generate_signup_link('producti en C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-paypal-payments\modules\ppcp-api-client\src\Endpoint\class-partnerreferrals.php en la línea 112
+

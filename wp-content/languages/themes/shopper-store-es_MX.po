@@ -1,0 +1,48 @@
+# Translation of Themes - Shopper Store in Spanish (Mexico)
+# This file is distributed under the same license as the Themes - Shopper Store package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-03-08 14:21:14+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es_MX\n"
+"Project-Id-Version: Themes - Shopper Store\n"
+
+#. Description of the theme
+msgid "Shopper-store is a unique and modern theme for online shops, which comes with a lovely and elegant design. Your shop will have a clean and beautiful look, showing the products in a classy way.If you are looking for fresh,  Free Themes for WordPress which showcases your product beautifully and enhances your web page in every aspect, Shopper Store is the best option. It perfectly integrated WooCommerce and other useful eCommerce plugins. With clean and SEO optimized coding. The theme provides you with many customization options to quickly make changes on your website and see the changes live."
+msgstr "Shopper-store es un tema único y moderno para tiendas en línea, que viene con un diseño encantador y elegante. Tu tienda tendrá un aspecto limpio y hermoso, mostrando los productos de una manera elegante.Si estás buscando temas nuevos y gratuitos para WordPress que muestren tu producto de manera hermosa y mejoren tu página web en todos los aspectos, Shopper Store es la mejor opción. Integra perfectamente WooCommerce y otros plugins útiles de comercio electrónico. Con codificación limpia y optimizada para SEO. El tema te brinda muchas opciones de personalización para realizar cambios rápidamente en tu sitio web y verlos en vivo."
+
+#. Theme Name of the theme
+msgid "Shopper Store"
+msgstr "Shopper Store"
+
+#: functions.php:185
+msgid "Masonry grid"
+msgstr "Cuadrícula de mampostería "
+
+#: functions.php:184
+msgid "Grids"
+msgstr "Cuadrícula "
+
+#: functions.php:183
+msgid "Default"
+msgstr "Predeterminado"
+
+#: functions.php:180
+msgid "Choose between different Posts Loop options to be used as default"
+msgstr "Elige entre las diferentes opciones de bucle de publicaciones para usar de forma predeterminada"
+
+#: functions.php:179
+msgid "Posts Loop Style"
+msgstr "Estilo de bucle de publicaciones "
+
+#: functions.php:163
+msgid "Blog Management"
+msgstr "Gestión del blog "
+
+#. Author of the theme
+msgid "aThemeArt"
+msgstr "aThemeArt"

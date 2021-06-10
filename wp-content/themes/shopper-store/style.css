@@ -1,0 +1,144 @@
+/*
+Theme Name:   Shopper Store
+Description:  Shopper-store is a unique and modern theme for online shops, which comes with a lovely and elegant design. Your shop will have a clean and beautiful look, showing the products in a classy way.If you are looking for fresh,  Free Themes for WordPress which showcases your product beautifully and enhances your web page in every aspect, Shopper Store is the best option. It perfectly integrated WooCommerce and other useful eCommerce plugins. With clean and SEO optimized coding. The theme provides you with many customization options to quickly make changes on your website and see the changes live.
+Author:       aThemeArt
+Author URL:   https://athemeart.com/
+Template:     shoper
+
+License:      GNU General Public License v3
+License URI:  https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain:  shopper-store
+
+Version:      1.0.2
+Requires at least: 5.0
+Tested up to: 5.6.2
+Requires PHP: 7.0
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, sticky-post, custom-background, custom-header, custom-colors, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, custom-logo, blog, e-commerce
+
+
+Shopper Store WordPress Theme, Copyright 2020 aThemeArt
+Shopper Store is distributed under the terms of the GNU GPL
+
+Shopper Store is child theme of shoper WordPress Theme, Copyright 2020 aThemeArt
+
+*/
+:root {
+
+ 
+  --nav-color:#fff;
+  --nav-h-color:#fff;
+  --secondary-color: #734f96;
+
+}
+header.site-header{
+    padding-bottom: 0;
+	background:#f3cd29;
+}
+#nav_bar_wrap {
+    border-top: solid 1px #eee;
+    margin-top: 40px;
+	background:#f3cd29;
+}
+#masthead [class*="col-"] {
+    padding-top:0px;
+    padding-bottom:0px;
+	
+
+}
+
+#masthead #navbar .navigation-menu > li > a{
+	padding:17px 20px;	
+
+}
+#masthead #navbar li{
+	float:left;	
+}
+#masthead #navbar{
+	display:block;	
+}
+#navbar .navigation-menu > li > a{
+	border-radius:0px;
+}
+#masthead .header-icon li li > a{
+	color:#000;	
+}
+#navbar .navigation-menu > li:hover > a, #navbar .navigation-menu > li:focus > a, #navbar .navigation-menu > li > a:focus, #navbar .navigation-menu > li.current-menu-item > a, #navbar .navigation-menu > li.current-page-parent > a, #navbar .navigation-menu > li.current_page_item > a {
+    background: var(--secondary-color);
+    color: var(--nav-h-color);
+}
+#masthead .header-icon li span.quantity{
+	background:var( --secondary-color );	
+}
+#masthead .header-icon li span.quantity::before {
+	border-top: 8px solid var( --secondary-color );	
+}
+#masthead .header-icon li:hover > a, #masthead .header-icon li a:focus {
+    color: var( --secondary-color );	
+}
+#masthead .header-icon li ul {
+	border-top: 1px solid var( --secondary-color );	
+}
+#masthead .header-icon li ul::after {
+   border-bottom: 8px solid var( --secondary-color );	
+}
+#masthead #navbar li li{
+	float:none;
+	display:block;	
+}
+#navbar .navigation-menu li ul{
+	z-index:999;	
+}
+#navbar .navigation-menu li li > a{
+	 color: var(--secondary-color);
+}
+#navbar .navigation-menu li li > a:hover, #navbar .navigation-menu li li > a:focus, #navbar .navigation-menu li li.current-menu-item > a, #navbar .navigation-menu li li.current-page-parent > a{
+	  background:var( --secondary-color );
+	  color:#fff;
+}
+#navbar .navigation-menu li ul{
+	border-top: 1px solid var( --secondary-color );
+}
+#navbar .navigation-menu li ul::after {
+	border-bottom: 8px solid var( --secondary-color );
+}
+a.search-close-trigger:focus,a.search-close-trigger:hover{
+	transform: scale(1.5); 
+}
+@media only screen and (max-width : 992px) {
+	#masthead #navbar ul{
+		margin-right:0px;
+		width:100%;
+	}
+	#masthead .search-box{
+		padding-top:40px;	
+		background:#f3cd29;
+	}
+	.ss-content{
+		padding-right:00px;	
+	}
+	#navbar .navigation-menu > li > a{
+		color:var( --secondary-color );
+	}
+	#masthead #navbar .navigation-menu > li > a{
+		padding: 12px 20px;
+	}
+	#navbar .responsive-submenu-toggle {
+		background: var(--secondary-color);
+		border:1px solid  var(--secondary-color);
+		color: #fff;
+	}
+	#navbar .responsive-submenu-toggle:hover, #navbar .responsive-submenu-toggle:focus{
+		color: var(--secondary-color);
+	}
+}
+
+#content .shoper-single-post blockquote {
+    background-color: #f5f5f5;
+    font-weight: 400;
+    color: #444;
+    border-left: 4px solid var( --secondary-color );
+    font-style: italic;
+    font-weight: 700;
+    margin: 3%;
+    padding: 15px;
+}
