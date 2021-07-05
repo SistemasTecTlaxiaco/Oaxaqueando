@@ -1,6 +1,6 @@
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
-    button.innerText = '﹖';
+    button.innerText = '->';
 
     let places = staticLoadPlaces();
     renderPlaces(places);
@@ -12,7 +12,7 @@ function staticLoadPlaces() {
             name: 'Pokèmon',
             
             location: {
-                lat: 17.2649160,
+                lat: 17.264916,
                 lng: -97.6779120,
            },
         },
@@ -23,16 +23,27 @@ var models = [
     {
         url: './assets/quesillox.glb',
         scale: '0.5 0.5 0.5',
-        info: 'Quesillo, Queso representativo del estado',
+        info: 'El Quesillo, una variente del queso blanco Mexicano nacido en los valles centrales de Oaxaca',
         rotation: '0 180 0',
     },
     {
-        url: './assets/ultimo.glb',
+        url: './assets/casisom.glb',
         scale: '0.5 0.5 0.5',
         rotation: '0 180 0',
-        info: 'Sombrero de gamuza, artesania comun en el estado',
+        info: 'Sombrero conocido como Charro 24, llegaron al itsmo hace muchos años y no se encuentran en ninguna parte de Mexico ',
     },
-   
+    {
+        url: 'prueba2.glb',
+        scale: '0.1 0.1 0.1',
+        rotation: '0 180 0',
+        info: 'Cesta tejida de mimbre, artesania multiusos puede usarse como decoracion o para almacenar y transportar diversos objetos',
+    },
+    {
+        url: 'cemitagood.glb',
+        scale: '0.9 0.9 0.9',
+        rotation: '180 190 100',
+        info: 'Cemita Tlaxiaqueña, sin duda, el pan mas emblematico y representativo de nuestra region',
+    },
 ];
 
 var modelIndex = 0;
